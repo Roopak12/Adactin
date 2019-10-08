@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="32.992044">
+<testcase classname="Facebook Application smoke test automation scripts" name="Verify the login functionality of the application with invalid credentials" time="32.992044">
+<system-out><![CDATA[Given User should be in Facebook Applications...............................passed
+Then User should see the facebook logo displayed in the header..............passed
+When User enter the Email address in the emailfield in Login Page...........passed
+And User enter the password in the passwordField............................passed
+And User click on the Login Button..........................................passed
+And User wait for 3 seconds for page load...................................passed
+Then User should see the Login into Facebook title..........................passed
+]]></system-out>
+</testcase>
+</testsuite>

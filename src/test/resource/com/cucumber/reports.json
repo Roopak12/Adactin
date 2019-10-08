@@ -1,0 +1,149 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Launch the application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 19294358800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should be in Facebook Applications",
+            "match": {
+              "location": "StepDefiniton.user_should_be_in_Facebook_Applications()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 343000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHook()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify the login functionality of the application with invalid credentials",
+        "description": "",
+        "id": "facebook-application-smoke-test-automation-scripts;verify-the-login-functionality-of-the-application-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 83400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHook()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1450433000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should see the facebook logo displayed in the header",
+            "match": {
+              "location": "StepDefiniton.user_should_see_the_facebook_logo_displayed_in_the_header()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1818013700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enter the Email address in the emailfield in Login Page",
+            "match": {
+              "location": "StepDefiniton.user_enter_the_Email_address_in_the_emailfield_in_Login_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 640034400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enter the password in the passwordField",
+            "match": {
+              "location": "StepDefiniton.user_enter_the_password_in_the_passwordField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6466636700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click on the Login Button",
+            "match": {
+              "location": "StepDefiniton.user_click_on_the_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004631300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User wait for 3 seconds for page load",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefiniton.user_wait_for_seconds_for_page_load(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 317509400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should see the Login into Facebook title",
+            "match": {
+              "location": "StepDefiniton.user_should_see_the_Login_into_Facebook_title()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Facebook Application smoke test automation scripts",
+    "description": "",
+    "id": "facebook-application-smoke-test-automation-scripts",
+    "keyword": "Feature",
+    "uri": "FaceBook.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Facebook"
+      }
+    ]
+  }
+]
