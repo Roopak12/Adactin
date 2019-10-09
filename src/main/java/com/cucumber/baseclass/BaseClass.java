@@ -48,13 +48,15 @@ public class BaseClass {
 
 		return driver;
 	}
+	public static void url(String Enterurl) {
+		driver.get(Enterurl);
+	}
 	// get URL
 
-	public static void getUrl(String url) throws Exception {
+	public static void getUrlFrom(String url ) throws Exception {
 		try {
 			driver.get(url);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			throw new Exception("url is not present");
 		}
@@ -377,11 +379,11 @@ public class BaseClass {
 
 	// explicit wait
 
-	public static void waitforvisibilityofelment(WebElement element) {
+	public static void waitforvisibilityofelment(WebElement string) {
 
 		try {
 			WebDriverWait wb = new WebDriverWait(driver, 30);
-			wb.until(ExpectedConditions.visibilityOf(element));
+			wb.until(ExpectedConditions.visibilityOf(string));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

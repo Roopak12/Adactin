@@ -1,0 +1,3 @@
+BrowserName= chrome
+Url="https://www.google.com"
+Implicit wait=20

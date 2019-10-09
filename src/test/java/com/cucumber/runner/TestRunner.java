@@ -12,13 +12,13 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin = {"pretty",
-				"html:src\\test\\resource\\com\\cucumber\\reports",
-				"json:src\\test\\resource\\com\\cucumber\\reports.json",
-				"junit:src\\test\\resource\\com\\cucumber\\reports.xml"},
+//		plugin = {"pretty",
+//				"html:src\\test\\resource\\com\\cucumber\\reports",
+//				"json:src\\test\\resource\\com\\cucumber\\reports.json",
+//				"junit:src\\test\\resource\\com\\cucumber\\reports.xml"},
 		features = "src\\test\\java\\com\\cucumber\\feature",
 glue="com.cucumber.stepdefinition",
-tags = {"@Facebook","~@Ignore"},
+//tags = {"@Facebook","~@Ignore"},
 dryRun=false, strict = true, monochrome = true
 )
 
