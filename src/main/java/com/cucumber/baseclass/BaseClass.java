@@ -43,9 +43,9 @@ public class BaseClass {
 			throw new Exception("Invalid");
 
 		}
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//
 		return driver;
 	}
 	public static void url(String Enterurl) {
@@ -58,7 +58,7 @@ public class BaseClass {
 			driver.get(url);
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new Exception("url is not present");
+			throw new Exception("url not present");
 		}
 
 	}

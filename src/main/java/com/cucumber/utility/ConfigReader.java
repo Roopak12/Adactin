@@ -13,7 +13,7 @@ public WebDriver driver;
 	public ConfigReader() throws Exception {
 		try {
 			File f = new File(System.getProperty("user.dir")
-					+ "\\src\\test\\resource\\com\\cucumber\\property");
+					+ "\\src\\test\\resource\\com\\cucumber\\property\\Configuration.property");
 			FileInputStream fis = new FileInputStream(f);
 			prop.load(fis);
 		} catch (Exception e) {
@@ -27,15 +27,15 @@ public WebDriver driver;
 		this.driver= lodriver;
 	}
 
-//	public String getBrowser() throws Exception {
-//		try {
-//			String browser = prop.getProperty("BrowserName");
-//			return browser;
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			throw new Exception("Browser name is not valid");
-//		}
-//	}
+	public String getBrowser() throws Exception {
+		try {
+			String browser = prop.getProperty("BrowserName");
+			return browser;
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new Exception("Browser name is not valid");
+		}
+	}
 
 	public String getUrl() throws Exception {
 		try {
